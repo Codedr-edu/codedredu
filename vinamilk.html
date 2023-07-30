@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+    <style>
+        @font-face{
+            font-family: VinamilkBold;
+            src: url(font/vnmbold.otf);
+        }
+        @font-face{
+            font-family:VinamilkReg;
+            src: url(font/vnmreg.otf);
+        }
+
+        html, body{
+            background-color: whitesmoke;
+        }
+        .main{
+            padding-top:10%;
+        }
+        .menu {
+            position: sticky;
+            display: inline-block;
+            vertical-align: top;
+            max-height: 100vh;
+            overflow-y: auto;
+            width: 300px;
+            top: 0;
+            bottom: 0;
+            padding: 30px;
+            background-color: #0313af;
+        }
+
+        .content {
+            display: inline-block;
+        }
+        .t{
+            font-family: VinamilkBold;
+            padding:0 0 10% ;
+            margin-top: -10px;
+            color: whitesmoke;
+        }
+        .t2{
+            font-family: VinamilkBold;
+            padding-left:2% ;
+            margin-top: 10px;
+            font-size: 200px;
+            color: #0313af;
+        }
+        .font{
+            color: white;
+            font-family: VinamilkBold;
+            font-size: 25px;
+            text-decoration: dashed whitesmoke;
+            margin-top: 5%;
+        }
+        .font2{
+            color: #0313af;
+            font-family: VinamilkBold;
+            font-size: 25px;
+            text-decoration: dashed whitesmoke;
+        }
+        .l{
+            color: whitesmoke;
+            text-decoration: underline whitesmoke;
+            margin-top: 5%;
+        }
+
+        .l:hover{
+            color: whitesmoke;
+            text-decoration: overline whitesmoke;
+        }
+        .blue-btn:hover{
+          background-color: whitesmoke;
+          color: #0313af;
+          border: 2px solid #0313af;
+        }
+        .blue-btn{
+          margin-left:10px;
+          font-size:30px;
+          font-family: VinamilkBold;
+          color: whitesmoke;
+          background-color: #0313af;
+        }
+      .blue-link{
+        text-decoration: underline #0313af;
+        color: #0313af;
+        font-family: VinamilkBold;
+        font-size: 30px;
+      }
+      .blue-link:hover{
+        text-decoration: overline #0313af;
+        transition-delay: all 3s;
+        color: #0313af;
+        font-size: 30px;
+      }
+      .bt-white{
+        font-size: 30px;font-family: VinamilkBold;background-color: whitesmoke;color: #0313af;
+      }
+      .bt-white:hover{
+        background-color: #0313af;
+        color: whitesmoke;
+        border: 2px solid whitesmoke;
+      }
+      ::selection{
+        background-color: #0313af;
+        color: whitesmoke;
+        border-radius: 5%;
+      }
+      ::-webkit-scrollbar{
+        background-color: whitesmoke;
+        width:10px;
+      }
+      ::-webkit-scrollbar-thumb{
+        background-color: #0313af;
+        border-radius: 3px;
+      }
+    </style>
+</head>
+<body>
+    <div class="is-widescreen">
+      <div class="text-center is-hidden-widescreen is-hidden-desktop is-hidden-tablet is-hidden-fullhd" style="background-color: #0313af;padding: 5%;">
+        <img class="img-fluid rounded-circle is-hidden-widescreen" style="width: 250px;padding:10%;" src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/334041058_190449360264011_5366225769773589125_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=A97a3Nsw8MsAX-aDyc1&_nc_oc=AQmifntGElFSWghtzJljjHeUVIH1lsErHBrMIALD8_NxtlWY1r9YA2M0lM4FWt8oJ0iwQGCpBQh2p33P8Zx1rn4K&_nc_ht=scontent.fhan15-1.fna&oh=00_AfDnu96bTex_Kp5atnR5PI5s4hiE6d7ArENR8zPnHXuKYA&oe=64B3CAAF" />
+        <h1 class="text-center" style="font-family: VinamilkBold;color: whitesmoke;margin-top: -5%;margin-bottom: 5%;font-size: 70px;">@Codedr08</h1>
+        <a href="#gtc" class="btn w-75 bt-white rounded shadow" style="font-size: 30px;font-family: VinamilkBold;">Khám phá ngay</a>
+      </div>
+        <div class="columns is-widescreen">
+          <aside class="menu is-hidden-mobile">
+           <div class="container">
+            <img class="img-fluid rounded-circle" style="width: 250px;padding:10%;" src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/334041058_190449360264011_5366225769773589125_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=A97a3Nsw8MsAX-aDyc1&_nc_oc=AQmifntGElFSWghtzJljjHeUVIH1lsErHBrMIALD8_NxtlWY1r9YA2M0lM4FWt8oJ0iwQGCpBQh2p33P8Zx1rn4K&_nc_ht=scontent.fhan15-1.fna&oh=00_AfDnu96bTex_Kp5atnR5PI5s4hiE6d7ArENR8zPnHXuKYA&oe=64B3CAAF" />
+            <h1 class="t text-center">@Codedr08</h1>
+            <br>
+           <ol class="font">
+            <li><a class="l" href="#gtc" style="margin-top: 5%;">Giới thiệu chung</a></li>
+            <li><a class="l" href="#hv" style="margin-top: 5%;">Học Vấn</a></li>
+            <li><a class="l" href="#knm" style="margin-top: 5%;">Kỹ năng mềm</a></li>
+            <li><a class="l" href="#kncm" style="margin-top: 5%;">Kỹ năng chuyên môn</a></li>
+            <li><a class="l" href="#knncm" style="margin-top: 5%;">Kỹ năng ngoài chuyên môn</a></li>
+            <li><a class="l" href="#kkn" style="margin-top: 5%;">Kênh Kết Nối</a></li>
+            <li><a class="l" href="#fw" style="margin-top: 5%;">For Work</a></li>
+           </ol>
+           </div>
+          </aside>
+          <div class="column content">
+            <div id="editorjs">
+              <h1 class="t2" id="gtc" style="color:#0313af;font-size: 60px;">1. Giới thiệu chung</h1>
+              <ul style="color: #0313af;font-family: VinamilkBold;font-size: 30px;margin-top: -15px;">
+                <li>Tên: Chắc có mk tui code như cc :)))</li>
+                <li>Tuổi: 14</li>
+                <li>Học vấn: Lớp 10 (THPT)</li>
+                <li>Định hướng nghề nghiệp: Python Django Full-stack Developer</li>
+              </ul>
+              <h1 class="t2" id="hv" style="color:#0313af;font-size: 60px;">2. Học Vấn</h1>
+              <ul style="color: #0313af;font-family: VinamilkBold;font-size: 30px;margin-top: -15px;">
+                <li>Tiểu Học: Đã Tốt Nghiệp (TH ***)</li>
+                <li>THCS: Đã Tốt Nghiệp (THCS ***)</li>
+                <li>THPT: Lớp 10, Pending... (THPT ***)</li>
+                <li>Đại học/Cao đẳng: Pending...</li>
+              </ul>
+              <h1 class="t2" id="knm" style="color:#0313af;font-size: 60px;">3. Kỹ năng mềm</h1>
+              <ul style="color: #0313af;font-family: VinamilkBold;font-size: 30px;margin-top: -15px;">
+                <li>Làm Việc Nhóm: Tạm Ổn</li>
+                <li>Giao Tiếp: Không tốt</li>
+                <li>Nghiên cứu & Sáng Tạo: Ổn</li>
+                <li>Kỷ luật bản thân: Tạm Ổn</li>
+                <li>Tiếng Anh: Tạm Ổn</li>
+              </ul>
+              <h1 class="t2" id="kncm" style="color:#0313af;font-size: 60px;">4. Kỹ năng chuyên môn</h1>
+              <ul style="color: #0313af;font-family: VinamilkBold;font-size: 30px;margin-top: -15px;">
+                <li>Python Cơ Bản: Tương đối thành thạo</li>
+                <li>Python Flask: Ổn</li>
+                <li>Python Django: Ổn</li>
+                <li>HTML & CSS: Ổn</li>
+                <li>CSS Frameworks: Ổn</li>
+                <li>C/C++: Ổn</li>
+                <li>JS: Pending...</li>
+                <li>MERN Web Development: Pending...</li>
+              </ul>
+              <h1 class="t2" id="knncm" style="color:#0313af;font-size: 60px;">5. Kỹ năng ngoài chuyên môn</h1>
+              <ul style="color: #0313af;font-family: VinamilkBold;font-size: 30px;margin-top: -15px;">
+                <li>Tin học văn phòng: Tương đối thành thạo</li>
+                <li>Tư Duy Logic: Tạm Ổn</li>
+                <li>Tư Duy Phản Biện: Tạm Ổn</li>
+                <li>Khối Môn Xã Hội: Tạm Ổn</li>
+                <li>Khối Môn Tự Nhiên: Tạm Ổn</li>
+                <li>Khối Môn Thể Chất: Tạm Ổn</li>
+                <li>Khối Môn Công nghệ: Ổn</li>
+              </ul>
+              <h1 class="t2" id="kkn" style="color:#0313af;font-size: 60px;">6. Kênh Kết Nối</h1>
+              <ul style="color: #0313af;font-size: 30px;">
+                <li><a class="blue-link" style="font-size: 30px;">Facebook: Hoàng Hùng Anh</a></li>
+                <li><a class="blue-link" style="font-size: 30px;">Instagram: hoanghunganh954</a></li>
+                <li><a class="blue-link" style="font-size: 30px;">Zalo: 0828455***</a></li>
+                <li><a class="blue-link" style="font-size: 30px;">Email 1: hoanghunganh954@gmail.com</a></li>
+                <li><a class="blue-link" style="font-size: 30px;">Email 2: Codedr123456789@gmail.com</a></li>
+                <li><a class="blue-link" style="font-size: 30px;">Email 3: anhhunghoang778@gmail.com</a></li>
+                <li><a class="blue-link" style="font-size: 30px;">Linkedin: /in/hha778</a></li>
+              </ul>
+              <h1 class="t2" id="fw" style="color:#0313af;font-size: 60px;">7. For Work</h1>
+              <div class="text-center">
+              <a class="btn w-75 blue-btn" >Cần làm một website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
